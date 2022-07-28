@@ -1,129 +1,144 @@
-theme: jekyll-theme-minimal
 
-minimal_mistakes_skin: "default"
-minimal_mistakes_skin2: "dark"
 
-title: "Jake Tae"
-subtitle: ""
-email: jake.tae@yale.edu
-description: >- # this means to ignore newlines until "baseurl:"
-  Hey there! My name is Jake, and I'm a sophomore at Yale University.
-words_per_minute: 200
-search: true
-search_full_content: true
+#page title
+page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
-# twitter_username: username
-github_username: jaketae
+# App Info
+ios_app_id                                : 1234793120                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  html_to_native: true
+appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+playstore_link                            :                                           # Enter Google Play Store URL.
+presskit_download_link                    : https://emilbaehr.com                                          # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
+                                                                                      # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
+app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_description                           : Write a short tagline for your app.
 
-include:
-  - _pages
-  - _portfolio
+enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-  - jekyll-seo-tag
 
-author:
-  name: "Jake Tae"
-  avatar: "/assets/images/Photo.jpg"
-  bio: "An aspiring mathematician and data scientist. Fan of tech, soccer, guitar, and food."
-  location: "Seoul, KOR"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:jake.tae@yale.edu"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/jaketae"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jaketae/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
-      url: "https://twitter.com/jaesungtae"
+# Information About Yourself
+your_name                                 : Emil Baehr                                
+your_link                                 : https://emilbaehr.com                     
+your_city                                 : Copenhagen                                
+email_address                             : emil.baehr@gmail.com
+facebook_username                         :                                           
+instagram_username                        : ebaehr
+twitter_username                          : ebaehr
+github_username                           : emilbaehr
+youtube_username                          :
 
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/jaketae"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jaketae/"
 
-# Collections
+
+# Feature List                            Edit, add or remove features to be presented.
+features                                  :
+
+  - title                                 : GitHub Pages Jekyll Theme
+    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. Push to gh-pages branch. Voilá!
+    fontawesome_icon_name                 : magic
+    
+  - title                                 : iPhone Device Preview
+    description                           : Preview your app in the context of an iPhone device. Five different device colors included.
+    fontawesome_icon_name                 : mobile
+
+  - title                                 : Video Support
+    description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
+    fontawesome_icon_name                 : play-circle
+
+  - title                                 : Automatic Icon and Metadata
+    description                           : Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
+    fontawesome_icon_name                 : sync
+
+  - title                                 : Easy to Tweak
+    description                           : Tweak accent color, images, icons and transparency via the _config.yml file. No HTML/CSS needed.
+    fontawesome_icon_name                 : adjust
+  
+  - title                                 : Feature List
+    description                           : Add features (like this one) to your site via the _config.yml file. No HTML/CSS needed.
+    fontawesome_icon_name                 : star
+
+  - title                                 : Smart App Banner
+    description                           : Display a smart app banner on iOS devices.
+    fontawesome_icon_name                 : arrow-alt-circle-down
+
+  - title                                 : Social Links
+    description                           : Easily add social media accounts and contact info in the footer via the _config.yml file. No HTML/CSS needed.
+    fontawesome_icon_name                 : link
+
+  - title                                 : FontAwesome Support
+    description                           : Pick custom Font Awesome icons for the feature list via the _config.yml file. No HTML/CSS needed.
+    fontawesome_icon_name                 : info-circle
+
+  - title                                 : # New Feature Title
+    description                           : # New Feature Description
+    fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
+
+
+
+# Theme Settings
+topbar_color                              : "#000000"
+topbar_transparency                       : 0.1
+topbar_title_color                        : "#ffffff"
+
+cover_image                               : assets/headerimage.png                    # Replace with alternative image path or image URL.
+cover_overlay_color                       : "#363b3d"
+cover_overlay_transparency                : 0.8
+
+device_color                              : black                                     # Set to: blue, black, yellow, coral or white.
+
+body_background_color                     : "#ffffff"
+
+link_color                                : "#1d63ea"
+
+app_title_color                           : "#ffffff"
+app_price_color                           : "#ffffff"
+app_description_color                     : "#ffffff"
+
+feature_title_color                       : "#000000"
+feature_text_color                        : "#666666"
+
+feature_icons_foreground_color            : "#1d63ea"
+feature_icons_background_color            : "#e6e6e6"
+
+social_icons_foreground_color             : "#666666"
+social_icons_background_color             : "#e6e6e6"
+
+footer_text_color                         : "#666666"
+
+
+
+
+
+
+
+
+
+
+
+
+
+####################################################
+### Jekyll Configuration. No need to touch this. ###
+####################################################
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :compressed # You might prefer to minify using :compressed
+
+# Exclude these files from your production _site
+exclude:
+  - LICENSE
+  - README.md
+  - CNAME
+
 collections:
-  portfolio:
+  pages:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:path/
 
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: false
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # - scope:
-  #     path: ""
-  #     type: portfolio
-  #   values:
-  #     layout: single
-  #     author_profile: true
-  #     share: true
-  #     related: true
-
-# SEO related
-# analytics:
-#   provider: "google-gtag"
-#   google:
-#     tracking_id: "UA-154432000-1"
-#     anonymize_ip: false # default
-# google_site_verification: google9c27511a2a69fff6.html
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+# Markdown rendering
+markdown: kramdown
