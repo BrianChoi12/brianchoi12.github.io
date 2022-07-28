@@ -1,8 +1,1 @@
----
-permalink: /
-layout: archive
-title: "Hello there!"
-author_profile: true
----
-
-:wave: Welcome to my website!
+### Welcome to my website!
