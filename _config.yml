@@ -18,17 +18,17 @@ remote_theme: "mmistakes/minimal-mistakes@4.19.3"
 #minimal_mistakes_skin: "default"
 #minimal_mistakes_skin2: "dark"
 
-title: "Jake Tae"
+title: "Brian Choi"
 subtitle: ""
-email: jake.tae@yale.edu
+email: brian.choi@yale.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Hey there! My name is Jake, and I'm a sophomore at Yale University.
+  Hello! My name is Brian Choi, and I am a sophomore at Yale University, majoring in Computer Science with a certificate in Statistics and Data Science. 
 words_per_minute: 200
 search: true
 search_full_content: true
 
 # twitter_username: username
-github_username: jaketae
+github_username: BrianChoi12
 
 # Build settings
 markdown: kramdown
@@ -69,32 +69,29 @@ plugins:
   - jekyll-seo-tag
 
 author:
-  name: "Jake Tae"
+  name: "Brian Choi"
   avatar: "/assets/images/Photo.jpg"
-  bio: "An aspiring mathematician and data scientist. Fan of tech, soccer, guitar, and food."
+  bio: "bio"
   location: "Seoul, KOR"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:jake.tae@yale.edu"
+      url: "mailto:brian.choi@yale.edu"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/jaketae"
+      url: "https://github.com/BrianChoi12"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jaketae/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
-      url: "https://twitter.com/jaesungtae"
+      url: "https://www.linkedin.com/in/brian-choi-14a0731b0"
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/jaketae"
+      url: "https://github.com/BrianChoi12"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jaketae/"
+      url: "https://www.linkedin.com/in/brian-choi-14a0731b0"
 
 # Collections
 collections:
