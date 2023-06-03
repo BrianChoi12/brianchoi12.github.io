@@ -5,6 +5,8 @@ import Resume from "./Resume";
 import App from "./App"; 
 import Project from "./Project"; 
 import Experience from "./Experience"; 
+import Education from "./Education"; 
+import Skills from "./Skills"; 
 
 const Base = ({ common, renderHead, renderBody }) => (
   <>
@@ -33,7 +35,7 @@ const Base = ({ common, renderHead, renderBody }) => (
               </Link>
             </li>
             <li>
-              <Link className="navbar-ref" to="/blog">
+              <Link className="navbar-ref" to="/education">
                 Education
               </Link>
             </li>
@@ -52,9 +54,10 @@ const Base = ({ common, renderHead, renderBody }) => (
         </div>
       </nav>
       <Routes>
-        <Route path="/home" element={<App common={common} />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/projects" element={<Project />} />
+        <Route path="/home" exact component={<App common={common} />} />
+        <Route path="/experience" exact component={<Skills />} />
+        <Route path="/projects" exact component={<Project />} />
+        <Route path="/education" exact component={<Education />} />
         {/* Add more routes for other pages */}
       </Routes>
     </Router>

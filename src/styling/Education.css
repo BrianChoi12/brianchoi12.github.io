@@ -1,10 +1,9 @@
-.rectangle-container {
+.education-container {
     background-color: #fdf6e3;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 40vh;
     margin: auto;
     border: 2px solid #008CBA;
     border-radius: 10px;
@@ -14,6 +13,7 @@
     position: relative;
     font-family: 'Lato', sans-serif;
     transition: opacity 0.1s; /* Adjust transition speed */
+    margin-bottom: 30px
   }
   
   .fade {
@@ -28,9 +28,10 @@
   }
   
   .rectangle-image {
-    max-width: 100%; 
-    max-height: 100%; 
-    object-fit: contain; 
+    width: 140px; /* adjust as needed */
+    height: 140px; /* adjust as needed */
+    object-fit: cover;
+    border-radius: 10px;
   }
   
   .rectangle-points {
@@ -69,5 +70,3 @@
   .rectangle-buttons button:hover {
     color: #008CBA; /* Blue text */
   }
-
-  

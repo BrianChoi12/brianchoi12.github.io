@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.container h2 {
+    margin-bottom: 10px;
+}
+
+.container .column {
+    width: 45%;
+}
+
+.container .column .list-group {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container .column .list-group .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.container .column .list-group .list-item:last-child {
+    border-bottom: none;
+}
+
+.container .column .list-group .list-item .name-container {
+    width: 80px; /* you can adjust this value based on your needs */
+}
+
+.container .column .list-group .list-item .bar-container {
+    flex-grow: 1;
+    margin-left: 10px;
+    height: 20px;
+    background-color: #eee;
+    display: flex; 
+    align-items: flex-start; 
+    flex-direction: column; 
+}
+
+.container .column .list-group .list-item .bar-container .bar {
+    height: 100%;
+    background-color: #008CBA;
+}

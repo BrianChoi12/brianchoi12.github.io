@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./styling/Experience.css";
 import "./styling/container.css";
+import qraft from "./static/qraftec_logo.webp"
+import img from "./static/yale-img.png"
+import yale from "./static/yale-seas.png"
 
 const rectangles = [
   {
-    image: "/path/to/image1.jpg",
+    image: qraft,
     points: [
       "Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1",
       "Point 2",
@@ -12,10 +15,13 @@ const rectangles = [
     ],
   },
   {
-    image: "/path/to/image2.jpg",
+    image: img,
     points: ["Point A", "Point B", "Point C"],
   },
-  // add as many rectangles as you want
+  {
+    image: yale,
+    points: ["Point A", "Point B", "Point C"],
+  },
 ];
 
 function Experience() {
