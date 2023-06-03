@@ -9,8 +9,11 @@ h1 {
   font-family: 'Lato', sans-serif;
 }
 
+.home{
+  margin:auto; 
+}
+
 .top-text {
-  min-height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +46,6 @@ h1 {
 }
 
 .scroll-wrapper {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,4 +96,18 @@ ul li a {
 
 .text-content {
   margin: 20px 0px 20px 0px;
+}
+
+.terminal-with-image {
+  display: flex;
+}
+
+.profile-pic {
+  border-radius: 50%;  /* Makes the image round */
+  border: 2px solid #008CBA; /* Adds a border */
+  margin-right: 100px; /* Add some space between the image and terminal */
+  height: 250px; /* Adjust based on your preference */
+  width: 250px; /* Adjust based on your preference */
+  align-items: flex-start; /* aligns items vertically in the center */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio */
 }

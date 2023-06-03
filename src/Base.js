@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Resume from "./Resume";
 import App from "./App"; 
 import Project from "./Project"; 
+import Experience from "./Experience"; 
 
 const Base = ({ common, renderHead, renderBody }) => (
   <>
@@ -32,8 +33,8 @@ const Base = ({ common, renderHead, renderBody }) => (
               </Link>
             </li>
             <li>
-              <Link className="navbar-ref" to="/resume">
-                Resume
+              <Link className="navbar-ref" to="/experience">
+                Experience
               </Link>
             </li>
             <li>
@@ -51,7 +52,7 @@ const Base = ({ common, renderHead, renderBody }) => (
       </nav>
       <Routes>
         <Route path="/home" element={<App common={common} />} />
-        <Route path="/resume" element={<Resume />} />
+        <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Project />} />
         {/* Add more routes for other pages */}
       </Routes>

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import "./styling/project.css"
+import React, { useState } from "react";
+import "./styling/container.css";
+import "./styling/project.css";
 
 const Project = () => {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -7,17 +8,18 @@ const Project = () => {
   const cardsData = [
     {
       id: 1,
-      title: 'Project 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      languages: ['JavaScript', 'React', 'HTML', 'CSS'],
-      githubLink: 'https://github.com/example/project1',
+      title: "Project 1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      languages: ["JavaScript", "React", "HTML", "CSS"],
+      githubLink: "https://github.com/example/project1",
     },
     {
       id: 2,
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      languages: ['Python', 'Django', 'PostgreSQL'],
-      githubLink: 'https://github.com/example/project2',
+      title: "Project 2",
+      description:
+        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      languages: ["Python", "Django", "PostgreSQL"],
+      githubLink: "https://github.com/example/project2",
     },
     // Add more card data as needed
   ];
@@ -36,7 +38,7 @@ const Project = () => {
         {cardsData.map((card) => (
           <div
             key={card.id}
-            className={`card ${selectedCard === card.id ? 'selected' : ''}`}
+            className={`card ${selectedCard === card.id ? "selected" : ""}`}
             onClick={() => handleCardClick(card.id)}
           >
             <h3 className="card-title">{card.title}</h3>
@@ -48,7 +50,12 @@ const Project = () => {
                 </div>
               ))}
             </div>
-            <a className="card-link" href={card.githubLink} target="_blank" rel="noopener noreferrer">
+            <a
+              className="card-link"
+              href={card.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View on GitHub
             </a>
           </div>

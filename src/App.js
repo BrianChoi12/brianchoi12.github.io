@@ -1,38 +1,73 @@
 import React from "react";
-import './styling/home.css';
+import "./styling/home.css";
+import "./styling/container.css";
+import Terminal from "./Terminal";
+import githubLogo from './static/github.svg';
+import linkedinLogo from './static/linkedin-logo.svg';
+import mailLogo from './static/email-mail-svgrepo-com.svg'
+import profilePic from './static/profile.jpeg';  
 
 const App = (props) => {
   const { common } = props;
 
   return (
-    <div className="container">
+    <div className="shadow-container">
       <div className="wrapper scroll-wrapper">
         <div className="top-text">
-          <h1>{common.first_name} {common.last_name}</h1>
-          <p className="text-title mobile-view">{common.first_name} {common.last_name}</p>
+          <h1>
+            {common.first_name} {common.last_name}
+          </h1>
+          <p className="text-title mobile-view">
+            {common.first_name} {common.last_name}
+          </p>
           <div className="social-icons">
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com">
-              <img className="title-logo" src="static/images/github.svg" alt="Github"/>
+          <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="mailto::brian.choi@yale.edu"
+            >
+              <img
+                className="title-logo"
+                src={mailLogo}
+                alt="Email"
+              />
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/">
-              <img className="title-logo" src="static/images/linkedin-logo.svg" alt="LinkedIn"/>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com"
+            >
+              <img
+                className="title-logo"
+                src={githubLogo}
+                alt="Github"
+              />
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com">
-              <img className="title-logo" src="static/images/twitter.svg" alt="Twitter"/>
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
-              <img className="title-logo" src="static/images/insta.svg" alt="Instagram"/>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/"
+            >
+              <img
+                className="title-logo"
+                src={linkedinLogo}
+                alt="LinkedIn"
+              />
             </a>
           </div>
         </div>
-        <div className="middle-text">
-          <p className="text-content">"intro stuff"</p>
-          <p className="text-content">Let's get in touch! Reach me at brian.choi@yale.edu (todo: link). </p>
-          <p className="text-content">Brian Choi</p>
+        <br></br>
+        <div className="terminal-with-image"> 
+          <img
+            className="profile-pic"
+            src={profilePic}
+            alt="Profile"
+          />
+          <Terminal />
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default App;

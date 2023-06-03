@@ -1,0 +1,74 @@
+.rectangle-container {
+    background-color: #fdf6e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    border: 2px solid #008CBA;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    position: relative;
+    font-family: 'Menlo', monospace;
+    transition: opacity 0.1s; /* Adjust transition speed */
+  }
+  
+  .fade {
+    opacity: 0;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: flex-start; /* align the content to the start */
+    width: 100%;
+    height: 80%;
+  }
+  
+  .rectangle-image {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    object-fit: cover;
+    border-radius: 10px;
+    flex-basis: 20%; 
+  }
+  
+  .rectangle-points {
+    list-style: inside;
+    padding: 0;
+    margin: 20px; /* remove the margin */
+    width: 100%;
+    color: #404040; 
+  }
+  
+  .rectangle-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    padding: 0 10px; /* Add some padding */
+  }
+  
+  .rectangle-buttons button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    color: #606060; /* Blue text */
+    
+  }
+  
+  .rectangle-buttons button:hover {
+    color: #008CBA; /* Blue text */
+  }

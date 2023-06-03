@@ -3,6 +3,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.top-text {
+  color: #606060
+}
+
 .navbar-ref {
   color: #808080;
   font-family: 'Lato', sans-serif;

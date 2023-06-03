@@ -1,0 +1,8 @@
+.shadow-container{
+    background-color: var(--off-white);
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 2%;
+    width: 70%; 
+    margin: auto;
+  }
