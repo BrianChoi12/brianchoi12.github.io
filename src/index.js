@@ -19,13 +19,5 @@ root.render(
     <Base
       common={my_info}
     />
-    <App common={my_info}/>
-    <Education />
-    <Experience />
-    <Skills />
-    <Project />
-    <br></br>
-    <br></br>
-    <br></br>
   </React.StrictMode>
 );

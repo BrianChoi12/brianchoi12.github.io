@@ -1,12 +1,13 @@
 import React from "react";
 import "./styling/base.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {Link as ScrollLink, Element} from 'react-scroll'; 
 import Resume from "./Resume";
-import App from "./App"; 
-import Project from "./Project"; 
-import Experience from "./Experience"; 
-import Education from "./Education"; 
-import Skills from "./Skills"; 
+import App from "./App";
+import Project from "./Project";
+import Experience from "./Experience";
+import Education from "./Education";
+import Skills from "./Skills";
 
 const Base = ({ common, renderHead, renderBody }) => (
   <>
@@ -25,42 +26,40 @@ const Base = ({ common, renderHead, renderBody }) => (
       rel="stylesheet"
     />
     {renderHead && renderHead()}
-    <Router>
-      <nav>
-        <div className="navbar-ul">
-          <ul id="navbar-list" className="list-inline">
-            <li>
-              <Link className="navbar-ref" to="/home">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link className="navbar-ref" to="/education">
-                Education
-              </Link>
-            </li>
-            <li>
-              <Link className="navbar-ref" to="/experience">
-                Experience
-              </Link>
-            </li>
-            <li>
-              <Link className="navbar-ref" to="/projects">
-                Projects
-              </Link>
-            </li>
-            
-          </ul>
-        </div>
-      </nav>
-      <Routes>
-        <Route path="/home" exact component={<App common={common} />} />
-        <Route path="/experience" exact component={<Skills />} />
-        <Route path="/projects" exact component={<Project />} />
-        <Route path="/education" exact component={<Education />} />
-        {/* Add more routes for other pages */}
-      </Routes>
-    </Router>
+    <nav>
+      <div className="navbar-ul">
+        <ul id="navbar-list" className="list-inline">
+          <li>
+            <a className="navbar-ref" href="#about">
+              About
+            </a>
+          </li>
+          <li>
+            <a className="navbar-ref" href="#education">
+              Education
+            </a>
+          </li>
+          <li>
+            <a className="navbar-ref" href="#experience">
+              Experience
+            </a>
+          </li>
+          <li>
+            <a className="navbar-ref" href="#projects">
+              Projects
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="about"><br></br><App common={common} /></div>
+    <div id="education"><br></br><Education /></div>
+    <div id="experience"><br></br><Experience /></div>
+    <div id="skills"><br></br><Skills /></div>
+    <div id="projects"><br></br><Project /></div>
+    <br></br>
+    <br></br>
+    <br></br>
   </>
 );
 
