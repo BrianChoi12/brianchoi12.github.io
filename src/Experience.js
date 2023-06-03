@@ -49,26 +49,31 @@ function Experience() {
   }
 
   return (
-    <div className={`rectangle-container ${fade ? "fade" : ""}`}>
-      <div className="content-wrapper">
-        <img
-          src={rectangles[currentIndex].image}
-          alt=""
-          className="rectangle-image"
-        />
-        <ul className="rectangle-points">
-          {rectangles[currentIndex].points.map((point, index) => (
-            <li key={index}>{point}</li>
-          ))}
-        </ul>
+    <div className="shadow-container">
+      <div className="top-text">
+        <h1>Experiences</h1>
       </div>
-      <div className="rectangle-buttons">
-        <button disabled={fade} onClick={goToPreviousRectangle}>
-          Previous
-        </button>
-        <button disabled={fade} onClick={goToNextRectangle}>
-          Next
-        </button>
+      <div className={`rectangle-container ${fade ? "fade" : ""}`}>
+        <div className="content-wrapper">
+          <img
+            src={rectangles[currentIndex].image}
+            alt=""
+            className="rectangle-image"
+          />
+          <ul className="rectangle-points">
+            {rectangles[currentIndex].points.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="rectangle-buttons">
+          <button disabled={fade} onClick={goToPreviousRectangle}>
+            Previous
+          </button>
+          <button disabled={fade} onClick={goToNextRectangle}>
+            Next
+          </button>
+        </div>
       </div>
     </div>
   );

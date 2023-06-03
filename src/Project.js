@@ -33,33 +33,38 @@ const Project = () => {
   };
 
   return (
-    <div className="card-row" onClick={handleOutsideClick}>
-      <div className="card-container">
-        {cardsData.map((card) => (
-          <div
-            key={card.id}
-            className={`card ${selectedCard === card.id ? "selected" : ""}`}
-            onClick={() => handleCardClick(card.id)}
-          >
-            <h3 className="card-title">{card.title}</h3>
-            <p className="card-description">{card.description}</p>
-            <div className="card-languages">
-              {card.languages.map((language, index) => (
-                <div key={index} className="language">
-                  {language}
-                </div>
-              ))}
-            </div>
-            <a
-              className="card-link"
-              href={card.githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
+    <div className="shadow-container">
+      <div className="top-text">
+        <h1>Projects</h1>
+      </div>
+      <div className="card-row" onClick={handleOutsideClick}>
+        <div className="card-container">
+          {cardsData.map((card) => (
+            <div
+              key={card.id}
+              className={`card ${selectedCard === card.id ? "selected" : ""}`}
+              onClick={() => handleCardClick(card.id)}
             >
-              View on GitHub
-            </a>
-          </div>
-        ))}
+              <h3 className="card-title">{card.title}</h3>
+              <p className="card-description">{card.description}</p>
+              <div className="card-languages">
+                {card.languages.map((language, index) => (
+                  <div key={index} className="language">
+                    {language}
+                  </div>
+                ))}
+              </div>
+              <a
+                className="card-link"
+                href={card.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

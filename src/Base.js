@@ -29,7 +29,12 @@ const Base = ({ common, renderHead, renderBody }) => (
           <ul id="navbar-list" className="list-inline">
             <li>
               <Link className="navbar-ref" to="/home">
-                Home
+                About
+              </Link>
+            </li>
+            <li>
+              <Link className="navbar-ref" to="/blog">
+                Education
               </Link>
             </li>
             <li>
@@ -42,11 +47,7 @@ const Base = ({ common, renderHead, renderBody }) => (
                 Projects
               </Link>
             </li>
-            <li>
-              <Link className="navbar-ref" to="/blog">
-                Blog
-              </Link>
-            </li>
+            
           </ul>
         </div>
       </nav>
