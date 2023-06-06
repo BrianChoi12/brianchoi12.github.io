@@ -29,15 +29,21 @@ function SkillsSection({ title, items }) {
 
 function Skills() {
   const languages = [
+    { name: "Go", rating: 9 },
+    { name: "C++", rating: 8 },
     { name: "Python", rating: 8 },
-    { name: "JavaScript", rating: 9 },
+    { name: "Javascript", rating: 7 },
+    { name: "SQL", rating: 7 },
     { name: "Java", rating: 7 },
+    { name: "OCaml", rating: 5 },
+
   ];
 
   const frameworks = [
-    { name: "React.js", rating: 9 },
-    { name: "Angular.js", rating: 7 },
-    { name: "Vue.js", rating: 8 },
+    { name: "PyTorch", rating: 9 },
+    { name: "Flask", rating: 8 },
+    { name: "React.js", rating: 6 },
+    { name: "Node.js", rating: 5 },
   ];
 
   return (

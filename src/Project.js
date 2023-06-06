@@ -11,16 +11,39 @@ const Project = () => {
       title: "Oat Compiler",
       description: "A complete compiler to turn Oat, a C-like language, into x86 assembly, including optimizations based on data flow analysis and graph coloring to achieve a fourfold performance improvement over baseline.",
       languages: ["OCaml", "LLVM", "x86"],
-      github: false, 
+      linkStatus: true, 
+      link: "https://www.cs.princeton.edu/courses/archive/spring19/cos320/hw/oat2.pdf", 
+      linkName: "Oat Language Specification", 
     },
     {
       id: 2,
-      title: "Project 2",
+      title: "Hoplite",
       description:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      languages: ["Python", "Django", "PostgreSQL"],
-      github: true, 
-      githubLink: "https://github.com/example/project2",
+        "An implementation of a backend distributed data store for task based distributed systems, through a sharded key-value data store for efficiency and fault tolerance.",
+      languages: ["Go", "gRPC"],
+      linkStatus: true, 
+      linkName: "Hoplite Paper", 
+      link: "https://arxiv.org/abs/2002.05814",
+    },
+    {
+      id: 3,
+      title: "Yost",
+      description:
+        "A full stack web application to allow Yale students to post notices for lost items and connect with other users when the item is found, completed with four other developers.",
+      languages: ["Flask", "Javascript", "SQL", "HTML/CSS"],
+      linkStatus: true, 
+      linkName: "GitHub Repository", 
+      link: "https://github.com/yale-cpsc-419-sp23/project-project-group-4",
+    },
+    {
+      id: 4,
+      title: "Gomoku Artificial Intelligence",
+      description:
+        "An AI agent for Gomoku built using minimax with alpha-beta pruning, achieving 60\% rate against  agent built on baseline minimax algorithm, completed with one developer.",
+      languages: ["Python"],
+      linkStatus: true, 
+      linkName: "GitHub Repository", 
+      link: "https://github.com/BrianChoi12/gomoku",
     },
     // Add more card data as needed
   ];
@@ -57,14 +80,14 @@ const Project = () => {
                 ))}
 
               </div>
-              {card.githubLink ? 
+              {card.linkStatus ? 
               <a
                 className="card-link"
-                href={card.githubLink}
+                href={card.link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View on GitHub
+                {card.linkName}
               </a> : <a></a>}
             </div>
           ))}
