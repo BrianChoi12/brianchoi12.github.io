@@ -35,7 +35,7 @@ const App = (props) => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com"
+              href="https://github.com/BrianChoi12"
             >
               <img
                 className="title-logo"
@@ -46,7 +46,7 @@ const App = (props) => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/booyeon-brian-choi/"
             >
               <img
                 className="title-logo"

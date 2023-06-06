@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './styling/Terminal.css';
 
 const commands = ['$whoami', 'Hello there!   '];
-const intro = 'I\'m Brian, a current student at Yale studying Computer Science.';
+const intro = 'I\'m Brian, a current student at Yale majoring in Computer Science. If you would like to connect, reach me at brian.choi@yale.edu! ';
 
 const Terminal = () => {
   const [text, setText] = useState('');
