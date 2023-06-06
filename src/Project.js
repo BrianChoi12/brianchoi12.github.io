@@ -45,6 +45,16 @@ const Project = () => {
       linkName: "GitHub Repository", 
       link: "https://github.com/BrianChoi12/gomoku",
     },
+    {
+      id: 5,
+      title: "Portfolio Website",
+      description:
+        "This website, built using React.js.",
+      languages: ["React.js", "Javascript", "CSS"],
+      linkStatus: true, 
+      linkName: "Recursion", 
+      link: window.location.href,
+    },
     // Add more card data as needed
   ];
 
