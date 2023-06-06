@@ -18,7 +18,7 @@
     flex: 0 0 250px;
     height: 500px;
     margin-right: 20px;
-    background-color: #fdf6e3;
+    background-color: whitesmoke;
     border: 2px solid #008CBA;
     border-radius: 10px;
     display: flex;
@@ -67,7 +67,7 @@
   .card .card-description {
     margin-top: 20px;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
   }
   
   .card .card-languages {

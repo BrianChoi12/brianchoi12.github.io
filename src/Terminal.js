@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './styling/Terminal.css';
 
-const commands = ['$whoami', 'John Doe - Full Stack Developer'];
-const intro = 'Hello there! I am a full stack developer with over 5 years of experience. I love solving complex problems and building seamless user experiences.';
+const commands = ['$whoami', 'Hello there!   '];
+const intro = 'I\'m Brian, a current student at Yale studying Computer Science.';
 
 const Terminal = () => {
   const [text, setText] = useState('');

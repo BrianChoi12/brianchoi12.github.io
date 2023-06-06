@@ -1,10 +1,10 @@
 .rectangle-container {
-    background-color: #fdf6e3;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 40vh;
+    height: 350px;
     margin: auto;
     border: 2px solid #008CBA;
     border-radius: 10px;
@@ -22,15 +22,17 @@
   
   .content-wrapper {
     display: flex;
-    justify-content: flex-start; /* align the content to the start */
     width: 100%;
     height: 80%;
+    align-items: flex-start; 
   }
   
   .rectangle-image {
     max-width: 100%; 
     max-height: 100%; 
     object-fit: contain; 
+    justify-content: center;
+    align-self: center;
   }
   
   .rectangle-points {
@@ -54,7 +56,7 @@
   .rectangle-buttons button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 100px;
     background-color: transparent;
     border: none;
     border-radius: 4px;
@@ -63,11 +65,19 @@
     text-decoration: none;
     transition: background-color 0.3s ease;
     color: #606060; /* Blue text */
-    
   }
   
   .rectangle-buttons button:hover {
     color: #008CBA; /* Blue text */
   }
 
-  
+  li {
+    list-style-position: outside;
+    margin-left: 10px; 
+    margin-bottom: 4px; 
+  }
+
+  #experience-info {
+    align-self: flex-start; /* align the content to the start */
+    margin-left: 5px; 
+  }

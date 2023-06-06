@@ -13,6 +13,8 @@ body {
   font-size: 16px;
   justify-content: center;
   display:flex; 
+  cursor: pointer; 
+  text-decoration: underline; 
 }
 
 .navbar-ul {
@@ -33,3 +35,11 @@ body {
 }
 
 
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  /* Additional styles as needed */
+}

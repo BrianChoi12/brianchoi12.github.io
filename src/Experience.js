@@ -1,26 +1,39 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./styling/Experience.css";
 import "./styling/container.css";
-import qraft from "./static/qraftec_logo.webp"
-import img from "./static/yale-img.png"
-import yale from "./static/yale-seas.png"
+import qraft from "./static/qraftec_logo.webp";
+import img from "./static/yale-img.png";
+import yale from "./static/yale-seas.png";
 
 const rectangles = [
   {
     image: qraft,
+    name: "Qraft Technologies",
+    position: "Software Engineer Intern",
+    time: "May 2023 - Aug 2023",
     points: [
-      "Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1Point 1",
-      "Point 2",
-      "Point 3",
+      "Deliver order management system (OMS) in Go for Qraft's internal trading platform, a mission critical feature that allows for fast rollout of new trading strategies and virtualization of accounts for easy collection of evaluation metrics.",
+      "Construct infrastructure to connect to multiple brokerage firms through WebSockets on OMS startup, and allow for flexible order transmission from the client through a clearly defined unified client interface.",
+      "Design feature to support trade logic simulation, allowing for transition to live trading with a single switch for safer rollout of trading strategies.",
     ],
   },
   {
     image: img,
-    points: ["Point A", "Point B", "Point C"],
+    name: "Yale Interactive Machines Group",
+    position: "Research Intern",
+    time: "Jan 2022 - May 2023",
+    points: ["Built original data processing pipelines for social robot navigation in virtual simulation to represent environmental information in graph structure using PyTorch Geometric. ",
+    "Implemented message passing graph neural network and custom loss function in PyTorch and used contrastive learning to train model to output effective social context representations.",
+    "Trained robot controller by building off using graph representations, improving autonomous navigation performance through increased awareness of human behavior patterns."],
   },
   {
     image: yale,
-    points: ["Point A", "Point B", "Point C"],
+    name: "Yale Department of Computer Science",
+    position: "Undergraduate Learning Assistant",
+    time: "Jan 2023 - May 2023",
+    points: ["Held 7 hours of office hours each week for Data Structures \& course with 200+ students.", 
+    "Explained course concepts, guided problem set walkthroughs, and assisted students in debugging both C and C++.",
+    ],
   },
 ];
 
@@ -66,17 +79,37 @@ function Experience() {
             alt=""
             className="rectangle-image"
           />
-          <ul className="rectangle-points">
-            {rectangles[currentIndex].points.map((point, index) => (
-              <li key={index}>{point}</li>
-            ))}
-          </ul>
+          <div>
+            <ul className="rectangle-points">
+              <div id="experience-info">
+                <h3>
+                  <b>{rectangles[currentIndex].name}</b>
+                </h3>
+                <p>
+                  <u>{rectangles[currentIndex].position}, {rectangles[currentIndex].time}</u>
+                </p>
+              </div>
+              {rectangles[currentIndex].points.map((point, index) => (
+                <div>
+                  <li key={index}>{point}</li>
+                </div>
+              ))}
+            </ul>
+          </div>
         </div>
         <div className="rectangle-buttons">
-          <button disabled={fade} onClick={goToPreviousRectangle}>
+          <button
+            disabled={fade}
+            style={{ fontSize: "20px" }}
+            onClick={goToPreviousRectangle}
+          >
             Previous
           </button>
-          <button disabled={fade} onClick={goToNextRectangle}>
+          <button
+            disabled={fade}
+            style={{ fontSize: "20px" }}
+            onClick={goToNextRectangle}
+          >
             Next
           </button>
         </div>

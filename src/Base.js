@@ -26,37 +26,42 @@ const Base = ({ common, renderHead, renderBody }) => (
       rel="stylesheet"
     />
     {renderHead && renderHead()}
-    <nav>
+    <nav className="fixed-nav">
       <div className="navbar-ul">
         <ul id="navbar-list" className="list-inline">
           <li>
-            <a className="navbar-ref" href="#about">
+            <ScrollLink className="navbar-ref" to="about" spy={true} smooth={true} duration={500}>
               About
-            </a>
+            </ScrollLink>
           </li>
           <li>
-            <a className="navbar-ref" href="#education">
+            <ScrollLink className="navbar-ref" to="education" spy={true} smooth={true} duration={500}>
               Education
-            </a>
+            </ScrollLink>
           </li>
           <li>
-            <a className="navbar-ref" href="#experience">
+            <ScrollLink className="navbar-ref" to="experience" spy={true} smooth={true} duration={500}>
               Experience
-            </a>
+            </ScrollLink>
           </li>
           <li>
-            <a className="navbar-ref" href="#projects">
+            <ScrollLink className="navbar-ref" to="projects" spy={true} smooth={true} duration={500}>
               Projects
-            </a>
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink className="navbar-ref" to="skills" spy={true} smooth={true} duration={500}>
+              Skills
+            </ScrollLink>
           </li>
         </ul>
       </div>
     </nav>
-    <div id="about"><br></br><App common={common} /></div>
-    <div id="education"><br></br><Education /></div>
-    <div id="experience"><br></br><Experience /></div>
-    <div id="skills"><br></br><Skills /></div>
-    <div id="projects"><br></br><Project /></div>
+    <Element name="about"><br></br><br></br><br></br><App common={common}/></Element>
+    <Element name="education"><br></br><br></br><br></br><Education/></Element>
+    <Element name="experience"><br></br><br></br><br></br><Experience/></Element>
+    <Element name="projects"><br></br><br></br><br></br><Project/></Element>
+    <Element name="skills"><br></br><br></br><br></br><Skills/></Element>
     <br></br>
     <br></br>
     <br></br>
