@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b6deeff3.css",
+    "main.js": "/static/js/main.1ed75732.js",
+    "static/media/profile.jpeg": "/static/media/profile.51573883d053b3b696b6.jpeg",
+    "static/media/yale-img.png": "/static/media/yale-img.20e06ed08b783b0b90c4.png",
+    "static/media/qraftec_logo.webp": "/static/media/qraftec_logo.6b802284f2858a43fcea.webp",
+    "static/media/yale-seas.png": "/static/media/yale-seas.e773bc42b34fbd23118b.png",
+    "static/media/yale_img.png": "/static/media/yale_img.09f6b282736e04d969ca.png",
+    "static/media/mx_logo.png": "/static/media/mx_logo.b209087555d5413b068e.png",
+    "static/media/github.svg": "/static/media/github.df23698d56f92aa62a870e1aa959b910.svg",
+    "static/media/email-mail-svgrepo-com.svg": "/static/media/email-mail-svgrepo-com.c39b910771e7c3ee518cfb755805f664.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin-logo.svg": "/static/media/linkedin-logo.a0cd9bd2eda7f38949a8b39b519a3d88.svg",
+    "main.b6deeff3.css.map": "/static/css/main.b6deeff3.css.map",
+    "main.1ed75732.js.map": "/static/js/main.1ed75732.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6deeff3.css",
+    "static/js/main.1ed75732.js"
+  ]
+}
