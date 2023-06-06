@@ -13,7 +13,7 @@ const rectangles = [
       {
         text: "Degree: ",
         isBold: true,
-        details: "B.S. Computer Science (Expected May 2025), GP4.0/4.0",
+        details: "B.S. Computer Science (Expected May 2025), GPA 4.0/4.0",
       },
       {
         text: "CS Coursework: ",

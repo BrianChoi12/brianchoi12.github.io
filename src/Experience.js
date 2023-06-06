@@ -3,7 +3,7 @@ import "./styling/Experience.css";
 import "./styling/container.css";
 import qraft from "./static/qraftec_logo.webp";
 import img from "./static/yale-img.png";
-import yale from "./static/yale-seas.png";
+import yale from "./static/yale-cs.png";
 
 const rectangles = [
   {
